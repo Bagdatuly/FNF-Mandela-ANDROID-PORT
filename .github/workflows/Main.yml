@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4.2.5
+        uses: actions/checkout@v4.3.1
 
       - name: Setup Android NDK
         uses: nttld/setup-ndk@v1
@@ -27,12 +27,12 @@ jobs:
           java-version: 11
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v4.2.5
+        uses: android-actions/setup-android@v2
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@v4.2.5
+        uses: krdlab/setup-haxe@v1.1.5
         with:
-          haxe-version: 4.2.5
+          haxe-version: 1.1.5
 
       - name: Install Haxelib
         run: |
