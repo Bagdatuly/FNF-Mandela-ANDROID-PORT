@@ -30,7 +30,7 @@ jobs:
         uses: android-actions/setup-android@v2
 
       - name: Setup Haxe
-        uses: HaxeFlixel/setup-haxe@v1
+        uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.2.5
 
